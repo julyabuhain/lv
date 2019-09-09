@@ -66,7 +66,7 @@
       },
       {
         "quote": "Sophie Turner, Fashion's IT girl",
-        "background": "02 selena gomez",
+        "background": "03 sophie turner",
         "containsImage": true,
         "bags": [
           "N93888",
@@ -1484,8 +1484,8 @@
       },
       {
         "quote": "All of the above",
-        "background": "23 wednesday ladies night",
-        "containsImage": true,
+        "background": "",
+        "containsImage": false,
         "bags": [
           "N94005",
           "N93716",
@@ -1551,7 +1551,7 @@
     "answers": [
       {
         "quote": "Wednesday ladies night",
-        "background": "24 friday happy hour",
+        "background": "23 wednesday ladies night",
         "containsImage": true,
         "bags": [
           "N96298",
@@ -1613,7 +1613,7 @@
       },
       {
         "quote": "Friday happy hour with friends",
-        "background": "25 saturdate",
+        "background": "24 friday happy hour",
         "containsImage": true,
         "bags": [
           "N95816",
