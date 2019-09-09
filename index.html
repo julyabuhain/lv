@@ -137,33 +137,27 @@
 
 
           $(document).ready(function() {
-          /*  $("#quiz-start").click(function() {
-              alert("whjat");
-            });
-*/
             $("input.selectAnswer").click(function() {
               var chosenBags = $(this)
                 .val()
                 .split(",");
 
               for (var b = 0; b < chosenBags.length; b++) {
-                console.log("inspecting " + chosenBags[b]);
                 if (bagScores.has(chosenBags[b])) {
-                  console.log("bagScores has bag" + chosenBags[b]);
-                  bagScores.set(
-                    chosenBags[b],
-                    bagScores.get(chosenBags[b]) + 1
-                  );
+                  var currentScore = bagScores.get(chosenBags[b]);
+                 bagScores.set(chosenBags[b], currentScore + (chosenBags.length -b));
                 }
-                //bagScores.set(chosenBags[b], bagScores.get(chosenBags[b]) + 1);
-                //console.log("updated" + bagScores.get(chosenBags[b]));
-                //alert(bagScores.get(chosenBags[b]));
               }
-              /*
-              for (const [k, v] of bagScores) {
-                console.log(k, v);
+
+              bagScores[Symbol.iterator] = function* () {
+                  yield* [...this.entries()].sort((a, b) => a[1] - b[1]);
               }
-              */
+              for (let [key, value] of bagScores) {     // get data sorted
+                  console.log(key + ' ' + value);
+              }
+              console.log("\r\n");
+              console.log([...bagScores][bagScores.size-1]);
+              alert("You really like this bag " + ([...bagScores][bagScores.size-1][0]) );
               console.log("\r\n");
             });
 
