@@ -52,6 +52,19 @@
             </li>
           </ol>
           <!-- /fs-fields -->
+                  <div id="results" class="results">
+        <div class="row">
+          <div class="arrow-left"><img src="img/back.png"></div>
+          <div class="bag-container"><img src="img/louis-vuitton--N93490_PM2_Front view.jpg"></div>
+
+          <div class="description">
+            <p>
+              <h3>M67210<h3>
+            <h2>Christopher Backpack PM in Crocodilien Mat Black</h2><br>
+<p>Inspired by a Louis Vuitton travel bag designed in 1901, Nicolas Ghesquière created the City Steamer. This luxurious PM version is crafted of crocodilian leather. An heirloom-quality piece with a host of House signatures – engraved padlock, nametag, hot-stamped LV Circle – this model can be carried by hand, on the shoulder or cross-body.          </p></div>
+                <div class="arrow-left"><img src="img/next.png"></div>
+        </div>
+      </div>
         </form>
         <!-- /fs-form -->
       </div>
@@ -59,7 +72,7 @@
     </div>
     <!-- /container -->
     <script>
-      var domain = "http://localhost:5000/";
+      var domain = "/";
       var bagsURL = domain + "data/bags.json";
       var questionsURL = domain + "data/questions.json";
       const bagScores = new Map();
@@ -77,6 +90,10 @@
 
           let questions = allResponses[1];
           for (i in questions) {
+            var lastQuestionClass = "";
+            if(i == questions.length-1) {
+              lastQuestionClass = "last-question";
+            }
             var questionLabel = "q" + i;
             var questionElem =
               '<li data-input-trigger><div class="question"><label class="fs-field-label fs-anim-upper"\
@@ -91,7 +108,7 @@
               var answerElem =
                 '<span>\
                 <input\
-                class="selectAnswer"\
+                class="select-answer ' + lastQuestionClass + '" \
                     id="' +
                 answerLabel +
                 '" name="' +
@@ -138,7 +155,10 @@
 
 
           $(document).ready(function() {
-            $("input.selectAnswer").click(function() {
+
+            $('#results').hide();
+
+            $("input.select-answer").click(function() {
               var chosenBags = $(this)
                 .val()
                 .split(",");
@@ -157,26 +177,17 @@
                   console.log(key + ' ' + value);
               }
               console.log("\r\n");
-              console.log([...bagScores][bagScores.size-1]);
+              console.log( [...bagScores]);
+              console.log("You really like this bag " + ([...bagScores][bagScores.size-1][0]) );
               console.log("\r\n");
             });
 
-            console.log("You really like this bag " + ([...bagScores][bagScores.size-1][0]) );
+              $("input.last-question").click(function() {
 
-
-            var results =
-              '<li>\
-              <label id="chosenBag" class="fs-field-label fs-anim-upper\
-                >What is your name?</label>\
-              <input\
-                class="fs-anim-lower"\
-                id="q1"\
-                name="q1"\
-                type="text"\
-                placeholder="Say it with a wink, dahling"\
-                required />\
-            </li>';
-            $("ol.fs-fields").append(results);
+                $('#results').show();
+             $("ol.fs-fields").hide();
+            });
+      
           });
         })
         .catch(err => {

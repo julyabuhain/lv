@@ -513,6 +513,7 @@ button.fs-continue,
   left: auto;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  display: none;
 }
 
 .fs-nav-dots button {
@@ -709,6 +710,7 @@ button.fs-continue {
   border-radius: 40px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.4);
+  display: none;
 }
 
 .fs-form-overview .fs-submit,
