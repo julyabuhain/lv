@@ -201,7 +201,7 @@
                  $('#results > div > div.description > h3:nth-child(2)').first().text(bagMap.get("Product Code"));
                 $('#results > div > div.description > h2').first().text(bagMap.get("Product Name"));
                 $('#results > div > div.description > p:nth-child(6)').first().text(bagMap.get("Product Details"));
-                $('#results > div > div.bag-container > img').first().attr("src",bagMap.get("Image Filename"));
+                $('#results > div > div.bag-container > img').first().attr("src",'/img/' + bagMap.get("Image Filename") + '.jpg');
 
 
                 $('#results').show();
