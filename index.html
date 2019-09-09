@@ -119,8 +119,10 @@
                 '"/>\
                     <label for="' +
                 answerLabel +
-                '" class="radio-'+answerLetters[j] +
-                '" style="background-image:linear-gradient(to bottom,rgba(34, 34, 34, 0),rgba(0, 0, 0, 0.5)), url(/img/' + encodeURI(questions[i].answers[j].background) + '.jpg)">' +
+                '" class="radio-'+answerLetters[j] + ' ' +
+                // oh my god i hate myself
+                (!questions[i].answers[j].containsImage ? 'noimage' : '') +
+                (questions[i].answers[j].containsImage ? '" style="background-image:linear-gradient(to bottom,rgba(34, 34, 34, 0),rgba(0, 0, 0, 0.5)), url(/img/' + encodeURI(questions[i].answers[j].background) + '.jpg)">' : '">' ) +
                 questions[i].answers[j].quote +
                 "</label></span>";
               questionElem = questionElem.concat(answerElem);
@@ -187,7 +189,7 @@
                 $('#results').show();
              $("ol.fs-fields").hide();
             });
-      
+
           });
         })
         .catch(err => {
