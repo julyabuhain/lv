@@ -196,7 +196,7 @@ button.fs-continue,
 
 .fs-fields > li > .question {
   margin: 0 auto;
-  width: 70%;
+  /* width: 70%; */
 }
 
 .fs-fields > li label.fs-field-label {
@@ -315,12 +315,13 @@ button.fs-continue,
 }
 
 .fs-fields > li .fs-radio-custom span {
-  float: left;
+  /* float: left; */
   position: relative;
-  margin-right: 3%;
+  /* margin-right: 3%; */
   padding: 10px;
   max-width: 400px;
   width: 45%;
+  height: 272px;
   text-align: center;
   font-weight: 700;
   font-size: 50%;
@@ -343,13 +344,18 @@ button.fs-continue,
 
 .fs-fields > li .fs-radio-custom label {
   display: block;
-  padding-top: 100%;
+  /* padding-top: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   cursor: pointer;
+
 }
 
 .fs-fields .fs-radio-custom label::after {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -365,7 +371,7 @@ button.fs-continue,
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
+/*
 .fs-fields .fs-radio-custom label.radio-a::after {
   background-image: url(../img/bag1.jpg);
 }
@@ -379,7 +385,7 @@ button.fs-continue,
 }
 .fs-fields .fs-radio-custom label.radio-d::after {
   background-image: url(../img/bag3.jpg);
-}
+} */
 
 .fs-fields .fs-radio-custom label:hover::after,
 .fs-fields input[type="radio"]:focus + label::after,
@@ -482,6 +488,17 @@ button.fs-continue,
 .fs-fields textarea:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.1);
 }
+
+
+
+/* phi's junk */
+
+.fs-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 /* Hide placeholder when focused in Webkit browsers */
 .fs-fields input:focus::-webkit-input-placeholder {
