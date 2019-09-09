@@ -4,8 +4,8 @@
     "answers": [
       {
         "quote": "Michelle Williams, the empowered woman",
-        "background": "",
-        "containsImage": false,
+        "background": "01%20michelle%20williams",
+        "containsImage": true,
         "bags": [
           "N95816",
           "N94901",
@@ -66,8 +66,8 @@
       },
       {
         "quote": "Sophie Turner, Fashion's IT girl",
-        "background": "",
-        "containsImage": false,
+        "background": "02%20selena%20gomez",
+        "containsImage": true,
         "bags": [
           "N93888",
           "N93021",
