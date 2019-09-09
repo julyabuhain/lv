@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "LouisVuitton";
+  src: url(../fonts/LouisVuitton-Regular.otf);
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  color: #3b3f45;
+  font-weight: 400;
+  font-family: "LouisVuitton";
+  font-size: 16px;
+  overflow: hidden;
+  overflow-y: scroll;
+  min-height: 590px;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.753);
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #fff;
+}
+
+#intro-banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(34, 34, 34, 0),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url("../img/intro.jpg");
+  height: 690px;
+  width: 98%;
+  background-size: cover;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#intro-banner div {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+#intro-banner div h5 {
+  margin-block-end: 1em;
+}
+
+#intro-banner div p {
+  font-size: 0.4em;
+  line-height: 2em;
+}
+
+#quiz-start {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  background-color: #fff;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.switch-field {
+  display: flex;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field label {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  background-color: #fff;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 24px;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: #fafafa;
+  box-shadow: none;
+}

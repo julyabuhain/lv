@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Louis Vitton Quiz</title>
+    <meta name="description" content="Louis Vitton" />
+    <meta name="author" content="White Widget, modified Codrops" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fs-form-wrap" id="fs-form-wrap">
+        <div class="fs-title">
+          <h1>What kind of Louis Vitton Bag are you?</h1>
+        </div>
+        <form id="myform" class="fs-form fs-form-full" autocomplete="off">
+          <ol class="fs-fields">
+            <li>
+              <label class="fs-field-label fs-anim-upper" for="q1"
+                >What's your name?</label
+              >
+              <input
+                class="fs-anim-lower"
+                id="q1"
+                name="q1"
+                type="text"
+                placeholder="Say it with a wink, dahling"
+                required
+              />
+            </li>
+
+            <li data-input-trigger>
+              <label
+                class="fs-field-label fs-anim-upper"
+                for="q3"
+                data-info="Choose what bag"
+                >Pick the one that makes your heart SING</label
+              >
+              <div
+                class="fs-radio-group fs-radio-custom clearfix fs-anim-lower"
+              >
+                <span
+                  ><input
+                    id="q3b"
+                    name="q3"
+                    type="radio"
+                    value="conversion"
+                  /><label for="q3b" class="radio-conversion">pink</label></span
+                >
+                <span
+                  ><input
+                    id="q3c"
+                    name="q3"
+                    type="radio"
+                    value="social"
+                  /><label for="q3c" class="radio-social">yellow</label></span
+                >
+                <span
+                  ><input
+                    id="q3a"
+                    name="q3"
+                    type="radio"
+                    value="mobile"
+                  /><label for="q3a" class="radio-mobile">blue</label></span
+                >
+              </div>
+            </li>
+            <li>
+              <label
+                class="fs-field-label fs-anim-upper"
+                for="q2"
+                data-info="We won't send you spam, we promise..."
+                >What's your email address?</label
+              >
+              <input
+                class="fs-anim-lower"
+                id="q2"
+                name="q2"
+                type="email"
+                placeholder="louis@vitton.com"
+                required
+              />
+            </li>
+          </ol>
+          <!-- /fs-fields -->
+          <button class="fs-submit" type="submit">Send answers</button>
+        </form>
+        <!-- /fs-form -->
+      </div>
+      <!-- /fs-form-wrap -->
+    </div>
+    <!-- /container -->
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script src="js/fullscreenForm.js"></script>
+    <script>
+      (function() {
+        var formWrap = document.getElementById("fs-form-wrap");
+
+        [].slice
+          .call(document.querySelectorAll("select.cs-select"))
+          .forEach(function(el) {
+            new SelectFx(el, {
+              stickyPlaceholder: false,
+              onChange: function(val) {
+                document.querySelector(
+                  "span.cs-placeholder"
+                ).style.backgroundColor = val;
+              }
+            });
+          });
+
+        new FForm(formWrap, {
+          onReview: function() {
+            classie.add(document.body, "overview"); // for demo purposes only
+          }
+        });
+      })();
+    </script>
+    <script>
+      var domain = "http://louis:8888/";
+      var bagsURL = domain + "data/bags.json";
+      var questionsURL = domain + "data/questions.json";
+
+      Promise.all([
+        fetch(bagsURL).then(value => value.json()),
+        fetch(questionsURL).then(value => value.json())
+      ])
+        .then(allResponses => {
+          let bags = allResponses[0];
+          for (i = 0; i < bags.length; i++) {
+            console.log(bags[i]["Product Code"]);
+          }
+
+          let questions = allResponses[1];
+          console.log(questions);
+
+          for (i = 0; i < questions.length; i++) {
+            $("ol.fs-fields").append(
+              $("<li data-input-trigger>").append(
+                $("<label>")
+                  .attr("class", "fs-field-label")
+                  .attr("class", "fs-anim-upper")
+                  .attr("for", "q" + (i + 1))
+                  .append(questions[i])
+              )
+            );
+          }
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    </script>
+  </body>
+</html>
