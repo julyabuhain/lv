@@ -128,8 +128,8 @@
       },
       {
         "quote": "Selena Gomez, social media princess",
-        "background": "",
-        "containsImage": false,
+        "background": "02 selena gomez",
+        "containsImage": true,
         "bags": [
           "N94072",
           "N93618",
@@ -190,8 +190,8 @@
       },
       {
         "quote": "Emma Stone, natural beauty",
-        "background": "",
-        "containsImage": false,
+        "background": "03-01 emma stone",
+        "containsImage": true,
         "bags": [
           "N94910",
           "N95839",
@@ -257,8 +257,8 @@
     "answers": [
       {
         "quote": "Mix and match of new and timeless pieces",
-        "background": "",
-        "containsImage": false,
+        "background": "04 mix and match",
+        "containsImage": true,
         "bags": [
           "N94278",
           "N93256",
@@ -319,8 +319,8 @@
       },
       {
         "quote": "Lots of classic pieces in neutral shades",
-        "background": "",
-        "containsImage": false,
+        "background": "05 lots of classic",
+        "containsImage": true,
         "bags": [
           "N95764",
           "N94822",
@@ -381,8 +381,8 @@
       },
       {
         "quote": "Crazy flambouyant colors",
-        "background": "",
-        "containsImage": false,
+        "background": "06 crazy flamboyant",
+        "containsImage": true,
         "bags": [
           "N93490",
           "N93021",
@@ -443,8 +443,8 @@
       },
       {
         "quote": "Street style",
-        "background": "",
-        "containsImage": false,
+        "background": "07 street style",
+        "containsImage": true,
         "bags": [
           "N95734",
           "N96298",
@@ -539,8 +539,8 @@
     "answers": [
       {
         "quote": "Shopping in Paris?",
-        "background": "",
-        "containsImage": false,
+        "background": "08 shopping in paris",
+        "containsImage": true,
         "bags": [
           "N93716",
           "N94008",
@@ -601,8 +601,8 @@
       },
       {
         "quote": "Catching a broadway show in New York",
-        "background": "",
-        "containsImage": false,
+        "background": "09 catching a broadway",
+        "containsImage": true,
         "bags": [
           "N94072",
           "N94635",
@@ -663,8 +663,8 @@
       },
       {
         "quote": "Skiing in Niseko.",
-        "background": "",
-        "containsImage": false,
+        "background": "10 skiing in niseko",
+        "containsImage": true,
         "bags": [
           "N93888",
           "N93021",
@@ -725,8 +725,8 @@
       },
       {
         "quote": "Reconnecting with nature in the Maldives",
-        "background": "",
-        "containsImage": false,
+        "background": "11 reconnecting with nature",
+        "containsImage": true,
         "bags": [
           "N95816",
           "N94901",
@@ -792,8 +792,8 @@
     "answers": [
       {
         "quote": "Lioness",
-        "background": "",
-        "containsImage": false,
+        "background": "12 lioness",
+        "containsImage": true,
         "bags": [
           "N93716",
           "N94008",
@@ -854,8 +854,8 @@
       },
       {
         "quote": "Panther",
-        "background": "",
-        "containsImage": false,
+        "background": "13 panther",
+        "containsImage": true,
         "bags": [
           "N93256",
           "N93089",
@@ -916,8 +916,8 @@
       },
       {
         "quote": "Unicorn",
-        "background": "",
-        "containsImage": false,
+        "background": "14 unicorn",
+        "containsImage": true,
         "bags": [
           "N93058",
           "N96402",
@@ -978,8 +978,8 @@
       },
       {
         "quote": "Butterfly",
-        "background": "",
-        "containsImage": false,
+        "background": "15 butterfly",
+        "containsImage": true,
         "bags": [
           "N94090",
           "N95335",
@@ -1045,8 +1045,8 @@
     "answers": [
       {
         "quote": "Fine dining restaurant with free flowing champagne",
-        "background": "",
-        "containsImage": false,
+        "background": "16 fine dining",
+        "containsImage": true,
         "bags": [
           "N94008",
           "N93256",
@@ -1106,9 +1106,9 @@
         ]
       },
       {
-        "quote": "Outdoor stargazing by the beach &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
-        "background": "",
-        "containsImage": false,
+        "quote": "Outdoor stargazing by the beach",
+        "background": "17 outdoor stargazing",
+        "containsImage": true,
         "bags": [
           "N94005",
           "N93716",
@@ -1169,8 +1169,8 @@
       },
       {
         "quote": "Happy hour at the bar and then clubbing",
-        "background": "",
-        "containsImage": false,
+        "background": "18 happy hour",
+        "containsImage": true,
         "bags": [
           "N93256",
           "N93085",
@@ -1231,8 +1231,8 @@
       },
       {
         "quote": "Dinner at your favourite restaurant then movie",
-        "background": "",
-        "containsImage": false,
+        "background": "19 dinner",
+        "containsImage": true,
         "bags": [
           "N93490",
           "N96214",
@@ -1298,8 +1298,8 @@
     "answers": [
       {
         "quote": "Mobile phone",
-        "background": "",
-        "containsImage": false,
+        "background": "20 mobile phone",
+        "containsImage": true,
         "bags": [
           "N94008",
           "N93256",
@@ -1360,8 +1360,8 @@
       },
       {
         "quote": "Cosmetic purse",
-        "background": "",
-        "containsImage": false,
+        "background": "21 cosmetic purse",
+        "containsImage": true,
         "bags": [
           "N96298",
           "N93623",
@@ -1422,8 +1422,8 @@
       },
       {
         "quote": "Laptop",
-        "background": "",
-        "containsImage": false,
+        "background": "22 laptop",
+        "containsImage": true,
         "bags": [
           "N94005",
           "N93716",
@@ -1484,8 +1484,8 @@
       },
       {
         "quote": "All of the above",
-        "background": "",
-        "containsImage": false,
+        "background": "23 wednesday ladies night",
+        "containsImage": true,
         "bags": [
           "N94005",
           "N93716",
@@ -1551,8 +1551,8 @@
     "answers": [
       {
         "quote": "Wednesday ladies night",
-        "background": "",
-        "containsImage": false,
+        "background": "24 friday happy hour",
+        "containsImage": true,
         "bags": [
           "N96298",
           "N93623",
@@ -1613,8 +1613,8 @@
       },
       {
         "quote": "Friday happy hour with friends",
-        "background": "",
-        "containsImage": false,
+        "background": "25 saturdate",
+        "containsImage": true,
         "bags": [
           "N95816",
           "N94901",
@@ -1675,8 +1675,8 @@
       },
       {
         "quote": "Saturdate with my hubby",
-        "background": "",
-        "containsImage": false,
+        "background": "25 saturdate",
+        "containsImage": true,
         "bags": [
           "N93716",
           "N94008",
@@ -1737,8 +1737,8 @@
       },
       {
         "quote": "Sunday brunch with family",
-        "background": "",
-        "containsImage": false,
+        "background": "26 sunday brunch",
+        "containsImage": true,
         "bags": [
           "N90337",
           "N91386",
@@ -1804,8 +1804,8 @@
     "answers": [
       {
         "quote": "My partner",
-        "background": "",
-        "containsImage": false,
+        "background": "27 my partner",
+        "containsImage": true,
         "bags": [
           "N95816",
           "N94901",
@@ -1866,8 +1866,8 @@
       },
       {
         "quote": "My best friend",
-        "background": "",
-        "containsImage": false,
+        "background": "28 my best friend",
+        "containsImage": true,
         "bags": [
           "N96298",
           "N93623",
@@ -1928,8 +1928,8 @@
       },
       {
         "quote": "A celebrity date",
-        "background": "",
-        "containsImage": false,
+        "background": "29 celebrity date",
+        "containsImage": true,
         "bags": [
           "N93888",
           "N93021",
@@ -1990,8 +1990,8 @@
       },
       {
         "quote": "My sister",
-        "background": "",
-        "containsImage": false,
+        "background": "30 my sister",
+        "containsImage": true,
         "bags": [
           "N93716",
           "N94008",
