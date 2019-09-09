@@ -144,6 +144,13 @@ a:focus {
 .results {
   padding: 30px;
 }
+
+/* disgusting */
+#results {
+  font-size: 0.4em;
+}
+
+
 .results .row {
   margin-top: 150px;
   display: flex;
