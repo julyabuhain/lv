@@ -319,8 +319,7 @@ button.fs-continue,
   position: relative;
   /* margin-right: 3%; */
   padding: 10px;
-  max-width: 400px;
-  width: 45%;
+  width: 48%;
   height: 272px;
   text-align: center;
   font-weight: 700;
@@ -343,7 +342,7 @@ button.fs-continue,
 }
 
 .fs-fields > li .fs-radio-custom label {
-  display: block;
+  /* display: block;*/
   /* padding-top: 100%; */
   display: flex;
   align-items: center;
@@ -354,6 +353,8 @@ button.fs-continue,
   color: white !important;
   box-sizing: border-box;
   padding-top: 172px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .fs-fields > li .fs-radio-custom label.noimage {
