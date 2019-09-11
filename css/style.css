@@ -54,10 +54,10 @@ a:focus {
     ),
     url("../img/intro.jpg");
   height: 690px;
-  width: 98%;
   background-size: cover;
   margin: 0 auto;
   color: #fff;
+  border: 10px solid white;
 }
 
 #intro-banner div {
