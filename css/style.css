@@ -143,7 +143,7 @@ a:focus {
 }
 
 .results {
-  padding: 30px;
+  padding: 0 30px;
 }
 
 /* disgusting */
@@ -153,7 +153,6 @@ a:focus {
 
 
 .results .row {
-  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -165,7 +164,7 @@ a:focus {
 }
 
 .description {
-  padding: 35px;
+  padding: 0 35px;
 }
 
 .description h3 {
