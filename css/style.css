@@ -50,7 +50,7 @@ a:focus {
   background-image: linear-gradient(
       to bottom,
       rgba(34, 34, 34, 0),
-      rgba(0, 0, 0, 0.73)
+      rgba(0, 0, 0, 0.80)
     ),
     url("../img/intro.jpg");
   height: 690px;
@@ -64,7 +64,7 @@ a:focus {
   text-align: center;
   width: 40%;
   margin: 0 auto;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 #intro-banner div h5 {
@@ -73,7 +73,8 @@ a:focus {
 
 #intro-banner div p {
   font-size: 0.4em;
-  line-height: 2em;
+  line-height: 1.4em;
+  text-align: left;
 }
 
 #quiz-start {
@@ -181,4 +182,9 @@ a:focus {
 
 .description p {
     margin-top: -30px;
+}
+
+ #mc_embed_signup{
+   background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;
+ position: absolute;
 }
