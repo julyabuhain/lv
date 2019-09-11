@@ -793,7 +793,7 @@ button.fs-continue:hover {
 @keyframes animHideNext {
   to {
     opacity: 0;
-    transform: translate3d(0, -500px, 0);
+    transform: translate3d(-90vh, 0, 0);
   }
 }
 
@@ -811,7 +811,7 @@ button.fs-continue:hover {
 @keyframes animShowNext {
   from {
     opacity: 0;
-    transform: translate3d(0, 500px, 0);
+    transform: translate3d(90vh, 0, 0);
   }
 }
 
