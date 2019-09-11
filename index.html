@@ -231,20 +231,22 @@
               $('.arrow-left').hide();
               $('.arrow-right').click(function() {
                 if(bagPage < bagPageMax){
-                  ++bagPage;
-                    loadBagMap(bagPage);
-                } else {
-                  $('.arrow-right').hide();
-                  $('arrow-left').show();
+                  bagPage++;
+                  loadBagMap(bagPage);
+                  $('.arrow-left').show();
+                  if(bagPage === bagPageMax){
+                    $('.arrow-right').hide()
+                  }
                 }
               });
               $('.arrow-left').click(function() {
                 if(bagPage > 0){
-                    --bagPage;
-                    loadBagMap(bagPage);
-                } else {
-                  $('.arrow-left').hide();
+                  bagPage--;
+                  loadBagMap(bagPage);
                   $('.arrow-right').show();
+                  if(bagPage === 0){
+                    $('.arrow-left').hide()
+                  }
                 }
 
               });
