@@ -187,3 +187,32 @@ a:focus {
    background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;
  position: absolute;
 }
+
+/* Adjust form for smaller screens */
+@media screen and (max-width: 415px) {
+  #intro-banner div {
+    width: 80%;
+  }
+
+  .quote {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  #mc_embed_signup {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .bag-container img {
+    height: auto;
+    width: 100%;
+  }
+  .results .row {
+    display: block;
+  }
+
+  #results {
+    margin-top:40px;
+  }
+}

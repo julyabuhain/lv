@@ -870,20 +870,21 @@ input[type="text"]::-ms-clear {
 }
 
 /* Adjust form for smaller screens */
-@media screen and (max-width: 52.5em) {
+@media screen and (max-width: 415px) {
   body {
     min-height: 500px;
   }
 
   .fs-form-wrap {
-    font-size: 70%;
+    /* font-size: 70%; */
+    overflow: auto;
   }
 
   .fs-form {
-    top: 6em;
-    right: 2em;
+    /* top: 6em; */
+    /* right: 2em; */
     left: 0;
-    padding: 0 3.75em 0 1em;
+    /* padding: 0 3.75em 0 1em; */
     width: auto;
     font-size: 2em;
   }
@@ -891,8 +892,19 @@ input[type="text"]::-ms-clear {
   .fs-form.fs-form-overview {
     top: 0;
     right: 0;
-    padding: 1.5em 1em 8em 1em;
-    font-size: 1.5em;
+    /* padding: 1.5em 1em 8em 1em;
+    font-size: 1.5em; */
+  }
+
+  .fs-fields > li .fs-radio-custom label {
+    padding-top: 24vw;
+  }
+
+  .fs-fields > li .fs-radio-custom span {
+    width: 100%;
+    height: 50vw;
+    padding: 10px 10px 0;
+    font-size: 5vw;
   }
 
   .fs-numbers {
