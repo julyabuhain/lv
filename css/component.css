@@ -880,6 +880,7 @@ input[type="text"]::-ms-clear {
   .fs-form-wrap {
     /* font-size: 70%; */
     overflow: auto;
+    overflow-x: hidden;
   }
 
   .fs-form {
