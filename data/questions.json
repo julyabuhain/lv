@@ -3,7 +3,7 @@
     "question": "Who is your style icon?",
     "answers": [
       {
-        "quote": "Michelle Williams, the empowered woman",
+        "quote": "Michelle Williams, <br> the empowered woman",
         "background": "01 michelle williams",
         "containsImage": true,
         "bags": [
@@ -468,7 +468,7 @@
     "question": "What is your go-to escape?",
     "answers": [
       {
-        "quote": "Shopping in Paris?",
+        "quote": "Shopping in Paris",
         "background": "08 shopping in paris",
         "containsImage": true,
         "bags": [
@@ -574,7 +574,7 @@
         ]
       },
       {
-        "quote": "Skiing in Niseko.",
+        "quote": "Skiing in Niseko",
         "background": "10 skiing in niseko",
         "containsImage": true,
         "bags": [
