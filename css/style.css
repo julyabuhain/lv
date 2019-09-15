@@ -30,8 +30,8 @@ body {
   font-weight: 400;
   font-family: "LouisVuitton";
   font-size: 16px;
-  overflow: hidden;
-  overflow-y: scroll;
+  /*overflow: hidden;
+  overflow-y: scroll;*/
   min-height: 590px;
 }
 
