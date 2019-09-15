@@ -146,6 +146,8 @@ a:focus {
 /* disgusting */
 #results {
   font-size: 0.4em;
+  position: relative;
+  top: -10px;
 }
 
 
@@ -157,7 +159,7 @@ a:focus {
 }
 
 .bag-container img {
-  height: 340px;
+  height: 310px;
 }
 
 .description {
@@ -189,6 +191,7 @@ h2 {
   padding: 10px;
   border-radius: 0px;
      background:#fff; clear:left; font:14px; width:100%;
+     margin-top: -12px;
 }
 /* Adjust form for smaller screens */
 @media screen and (max-width: 415px) {
