@@ -2,14 +2,14 @@
 <html lang="en" class="no-js">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147655618-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147655618-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'UA-147655618-1');
-    </script>
+  gtag('config', 'UA-147655618-1');
+</script>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -106,7 +106,6 @@
       var questionsURL = domain + "data/questions.json";
       const bagScores = new Map();
       let bags = [];
-      var questionIndex = 0;
 
       Promise.all([
         fetch(bagsURL).then(value => value.json()),
@@ -125,7 +124,6 @@
             if(i == questions.length-1) {
               lastQuestionClass = "last-question";
             }
-
             var questionLabel = "q" + i;
             var questionElem =
               '<li data-input-trigger><div class="question"><label class="fs-field-label fs-anim-upper"\
@@ -196,13 +194,6 @@
                 .val()
                 .split(",");
 
-              /* 
-                What Does Your Wardrobe Look Like 2
-                Event 9
-              */
-
-              questionIndex++;
-
               for (var b = 0; b < chosenBags.length; b++) {
                 if (bagScores.has(chosenBags[b])) {
                   var currentScore = bagScores.get(chosenBags[b]);
@@ -213,64 +204,13 @@
               bagScores[Symbol.iterator] = function* () {
                   yield* [...this.entries()].sort((a, b) => a[1] - b[1]);
               }
-
               for (let [key, value] of bagScores) {     // get data sorted
                   console.log(key + ' ' + value);
               }
-
-
-              if(questionIndex == 2){
-                var answer1 = "";
-                if(this.id == "q1a"){
-                  answer1 = "Answer A";
-                  //console.log("Answer a");
-                }
-                else if(this.id == "q1b"){
-                  answer1 = "Answer B";
-                  //console.log("Answer b");
-                }
-                else if(this.id == "q1c"){
-                  answer1 = "Answer C";
-                  //console.log("Answer c");
-                }
-                else if(this.id == "q1d"){
-                  answer1 = "Answer D";
-                  //console.log("Answer d");
-                }
-                console.log("Question " + questionIndex);
-                ga('send', 'event', 'Wardrobe Question 2', 'Answer', answer1, 1);
-              }
-              else if (questionIndex == 9){
-                var answer2 = "";
-                if(this.id == "q8a"){
-                  answer2 = "Answer A";
-                  //console.log("Answer a");
-                }
-                else if(this.id == "q8b"){
-                  answer2 = "Answer B";
-                  //console.log("Answer b");
-                }
-                else if(this.id == "q8c"){
-                  answer2 = "Answer C";
-                  //console.log("Answer c");
-                }
-                else if(this.id == "q8d"){
-                  answer2 = "Answer D";
-                  //console.log("Answer d");
-                }
-                console.log("Question " + questionIndex);
-                ga('send', 'event', 'Event Question 9', 'Answer', answer2, 1);
-              }
-              else{
-                console.log("Nada");
-              }
-
-              /*
               console.log("\r\n");
               console.log( [...bagScores]);
               console.log("You really like this bag " + ([...bagScores][bagScores.size-1][0]) );
               console.log("\r\n");
-              */
             });
 
 
