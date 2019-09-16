@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   color: #3b3f45;
+  overflow-x: hidden;
 }
 
 .overview .fs-form-wrap {
