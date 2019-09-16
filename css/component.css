@@ -4,7 +4,6 @@
   width: 100%;
   height: 100%;
   color: #3b3f45;
-  overflow: hidden;
 }
 
 .overview .fs-form-wrap {
@@ -879,7 +878,7 @@ input[type="text"]::-ms-clear {
 
   .fs-form-wrap {
     /* font-size: 70%; */
-    overflow: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
   }
 

@@ -148,6 +148,7 @@ a:focus {
   font-size: 0.4em;
   position: relative;
   top: -10px;
+  overflow: scroll !important;
 }
 
 
