@@ -56,7 +56,7 @@
         ]
       },
       {
-        "quote": "Sophie Turner, Fashion's IT girl",
+        "quote": "Sophie Turner, <br> Fashion's IT girl",
         "background": "03 sophie turner",
         "containsImage": true,
         "bags": [
@@ -109,7 +109,7 @@
         ]
       },
       {
-        "quote": "Selena Gomez, social media princess",
+        "quote": "Selena Gomez, <br> social media princess",
         "background": "02 selena gomez",
         "containsImage": true,
         "bags": [
@@ -162,7 +162,7 @@
         ]
       },
       {
-        "quote": "Emma Stone, natural beauty",
+        "quote": "Emma Stone, <br> natural beauty",
         "background": "03-01 emma stone",
         "containsImage": true,
         "bags": [
