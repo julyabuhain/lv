@@ -62,7 +62,7 @@ a:focus {
 
 #intro-banner div {
   text-align: center;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 5%;
 }
@@ -74,7 +74,7 @@ a:focus {
 #intro-banner div p {
   font-size: 0.4em;
   line-height: 1.4em;
-  text-align: left;
+  text-align: center;
 }
 
 #quiz-start {
