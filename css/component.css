@@ -964,4 +964,8 @@ input[type="text"]::-ms-clear {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
+  .fs-field-label {
+    margin-top: 16px !important;
+  }
 }
