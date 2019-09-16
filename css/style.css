@@ -215,11 +215,21 @@ h2 {
     height: auto;
     width: 100%;
   }
+
   .results .row {
-    display: block;
+    display: flex;
+  }
+
+  .arrow-left > img,
+  .arrow-right > img {
+    width: 56px;
   }
 
   #results {
     margin-top:40px;
+  }
+
+  .startOverButton {
+    margin-top: 24px;
   }
 }
