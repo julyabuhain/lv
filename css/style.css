@@ -42,9 +42,10 @@ a {
 }
 
 a:hover,
-a:focus {
+/* a:focus {
   color: #fff;
 }
+*/
 
 #intro-banner {
   background-image: linear-gradient(
